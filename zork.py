@@ -122,14 +122,14 @@ def Play_Zork():
 				loop = 11
 			elif cave_inp.lower() == ("scale staircase"):
 				loop = 11
-			elif cave_inp.lower() == ("suicide"):
+			elif cave_inp.lower() == ("kick the bucket"):
 				print("---------------------------------------------------------")
-				print("You throw yourself down the staircase as an attempt at suicide. You die.")
+				print("You die.")
 				print("---------------------------------------------------------")
-				suicide_inp = input("Do you want to continue? Y/N ")
-				if suicide_inp.lower() == ("n"):
+				dead_inp = input("Do you want to continue? Y/N ")
+				if dead_inp.lower() == ("n"):
 					exit()
-				if suicide_inp.lower() == ("y"):
+				if dead_inp.lower() == ("y"):
 					Play_Zork()
 			elif cave_inp.lower() == ("scale staircase"):
 				loop = 11
